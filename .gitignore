@@ -1,0 +1,382 @@
+# --------------------------------------------------------------------------------
+# Generic / OS
+# --------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~ 
+~$*
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# --------------------------------------------------------------------------------
+# Logs / runtime
+# --------------------------------------------------------------------------------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+debug.log
+
+# --------------------------------------------------------------------------------
+# Node / Frontend
+# --------------------------------------------------------------------------------
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# build outputs
+dist/
+build/
+.out/
+.out-tsc/
+.esbuild/
+.output/
+.astro/
+.temp/
+.vite
+.vite/
+
+# framework specific
+.next/
+.nuxt/
+/.vercel/
+.nuxt/dist/
+.remotion/
+.static/
+.svelte-kit/
+
+# caches
+.cache/
+.parcel-cache/
+.storybook/
+.tmp/
+.cache-loader/
+.rnx-kit/
+.pnp.js
+/.parcel-cache
+
+# bundlers/lockfiles created by package managers (keep the lockfile if you want)
+# (You may want to keep yarn.lock / package-lock.json in repo — remove from ignore if you do)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# envs
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# npm / yarn / pnpm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log
+
+# IDE helpers
+.webstorm/
+.sass-cache/
+.cache-loader/
+
+# --------------------------------------------------------------------------------
+# Python / Backend (Django, FastAPI)
+# --------------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.env/
+.venv/
+.python-version
+venv.bak/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+dist/
+build/
+*.manifest
+*.spec
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+# If you collectstatic into static/, ignore it if you don't want to include
+# static/
+# migrations - KEEP migrations in repo in most cases. Ignore if you generate them automatically.
+# **/migrations/__pycache__/
+# **/migrations/*.pyc
+
+# Testing / coverage
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+pytestdebug.log
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pipenv / poetry
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+
+# credentials
+secrets.json
+*.pem
+*.p12
+*.key
+*.crt
+
+# --------------------------------------------------------------------------------
+# Docker / Containers / K8s / CI
+# --------------------------------------------------------------------------------
+# Docker
+docker-compose.override.yml
+.docker/
+docker-compose.*.yml
+**/Dockerfile.*
+# local docker-compose
+docker-compose.local.yml
+
+# Kubernetes
+*.kubeconfig
+
+# CI artifacts
+.vscode-test/
+circleci/
+.github/workflows/*.cache
+
+# --------------------------------------------------------------------------------
+# IDEs / Editors / Tools
+# --------------------------------------------------------------------------------
+# VSCode
+.vscode/
+.vscode/*
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Vim
+**swap
+*.swp
+*.swo
+*.swn
+
+# --------------------------------------------------------------------------------
+# Blockchain / Smart contract tooling
+# --------------------------------------------------------------------------------
+# Node + build
+node_modules/
+
+# Hardhat
+artifacts/
+cache/
+typechain/
+hh-deploy.config.js
+# Hardhat deploy plugin
+deployments/
+# Hardhat encryption / keys (local dev)
+.env.local
+.env.*.local
+
+# Truffle
+build/
+contracts/build/
+contracts/coverage/
+*.config.js
+
+# Foundry
+out/
+lib/
+fuzz/
+
+# OpenZeppelin Upgrades / Plugins
+openzeppelin/
+
+# Ganache / chain data
+ganache-db/
+ganache-core/
+data/
+chaindata/
+geth/
+parity/
+chain/
+
+# Local keys, keystore, wallet files — NEVER commit
+keystore/
+keystore-*
+*.key
+*.keystore
+*.pem
+wallet-*
+wallet.json
+secret-*.json
+private_key*
+PRIVATE_KEY*
+mnemonic*
+mnemonic.txt
+
+# Artifacts and ABIs (add only if you do not want to keep ABIs in repo)
+artifacts/
+build/contracts/
+abi/
+abis/
+
+# Coverage and reports for solidity testing
+coverage/
+coverage.json
+solidity-coverage/
+
+# Hardhat cache
+.cache-hardhat
+
+# Misc blockchain
+contract-addresses.json
+deployedContractAddresses.json
+browser_build/
+truffle-db/
+truffle-config.js
+
+# If you use etherscan plugin and API keys
+etherscan.env
+etherscan-keys.env
+
+# --------------------------------------------------------------------------------
+# Crypto wallets / keys / sensitive files (catch-all)
+# --------------------------------------------------------------------------------
+*.p12
+*.pfx
+*.jks
+*.pem
+*.key
+*.der
+*.crt
+*.asc
+*.gpg
+*.secret
+*.secret.*
+secret.*
+secrets/
+credentials.json
+*.bak
+
+# --------------------------------------------------------------------------------
+# Build / CI artifacts (generic)
+# --------------------------------------------------------------------------------
+# generated docs
+docs/_build/
+site/
+build_docs/
+
+# coverage reports
+coverage/
+lcov-report/
+reports/
+
+# temporary files
+*.tmp
+*.temp
+
+# --------------------------------------------------------------------------------
+# Mobile / React Native / Expo
+# --------------------------------------------------------------------------------
+.expo/
+.expo-shared/
+android/.gradle/
+android/app/build/
+ios/build/
+ios/Pods/
+*.keystore
+
+# --------------------------------------------------------------------------------
+# Misc (fonts, binaries, executables)
+# --------------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.pem
+*.p12
+*.so
+*.dll
+*.exe
+
+# --------------------------------------------------------------------------------
+# Optional: per-folder .gitignore usage tips
+# --------------------------------------------------------------------------------
+# - If you keep frontend and backend as separate folders, you can add stricter .gitignore files inside:
+#   /frontend/.gitignore  (Node-specific)
+#   /backend/.gitignore   (Python-specific)
+#   /contracts/.gitignore (Hardhat/Truffle-specific)
+#
+# - Keep production config (e.g. production env files) out of the repo and store in your deployment secrets manager.
+#
+# --------------------------------------------------------------------------------
+# End of file
+# --------------------------------------------------------------------------------
